@@ -10,7 +10,7 @@ import { MdVerified } from "react-icons/md";
 const Payment = () => {
 
 
-    const [cardNumber, setCardNumber] = useState('');
+    const [cardNumber, setCardNumber] = useState('   ');
 
     const mask = (value) => {
      
@@ -34,8 +34,8 @@ const Payment = () => {
         <div className='main-form'>
 
             <div className='heading'>
-                <span className='h1'>Payment Method</span>
-                <span className='h2'>Select your payment method and
+                <span className='line1'>Payment Method</span>
+                <span className='line2'>Select your payment method and
                     enter your payment information.</span>
             </div>
 
@@ -58,6 +58,7 @@ const Payment = () => {
                             <span className='text'>Enter the 16- digit card number</span>
                             <div className="input-with-icon">
                                 <input type="text" id="card-number" className='name1' name="card-number" placeholder=""  value={cardNumber} required onChange={handleChange} />
+                                
                                 <MdVerified className="input-icon" />
                             </div>
                         </div>
@@ -125,7 +126,9 @@ const Payment = () => {
                     <div className='card-amount'>
                     <span className='amount-txt'>Amount to Pay</span>
                             <div className='to-pay'>
+                            
                                 <span className='circle1'></span>
+                                <span className='cad'>CAD 150</span>
                                 <span className='circle2'></span>
 
                             </div>

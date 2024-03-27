@@ -35,7 +35,7 @@
     }
 }
 
-.h1 {
+.line1 {
 
     font-family: "Raleway", Sans Serif;
     font-size: 44px;
@@ -45,10 +45,10 @@
 
 }
 
-.h2 {
+.line2 {
     font-family: "Open Sans", sans-serif;
 
-   
+   margin-top: 13px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -89,6 +89,7 @@
     width: 2500px;
     /* margin-left: 140px;
     margin-top: 45px; */
+   
 
 }
 
@@ -106,7 +107,7 @@
     width: 30%;
     max-width: 181px;
     /* width: 181px; */
-    height: 80px;
+    min-height: 80px;
     background-color: #FFFFFF;
     color: #676767;
     border: 1px solid #673821;
@@ -117,15 +118,25 @@
     border-radius: 4px;
     opacity: 0px;
     gap: 5px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 15px;
     font-weight: 400;
     line-height: 20.43px;
 
 }
+/* @media screen and (max-width: 768px) {
+    .btn {
+       display:flex;
+       flex-direction: column;
+
+    }
+} */
 @media screen and (max-width: 768px) {
     .btn-icon {
-       display:none;
+      display:none;
+     
+     
+
     }
 }
 
@@ -133,13 +144,14 @@
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-top: 22px;
+    margin-top: 25px;
 }
+
 
 .label-text {
     width: fit-content;
     height: 30px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 22px;
     font-weight: 600;
     line-height: 29.96px;
@@ -151,12 +163,14 @@
 .text {
     width: fit-content;
     height: 19px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: 19.07px;
     text-align: left;
     margin-top: 10px;
+    color: #676767;
+
 
 
 }
@@ -293,7 +307,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+
 }
+
+.form-submit input[type="submit"] 
+{
+    font-family: "Montserrat", sans-serif; 
+}
+
 
 .input-with-icon {
     position: relative;
@@ -344,8 +366,25 @@
     display:flex;
     justify-content:space-between;
     align-items: flex-start;
-    
+    text-align: center;
     box-sizing: border-box;
+
+}
+.cad 
+{
+text-align: center; 
+display:flex;
+justify-content: center;
+margin-top: 30px;
+/* transform: translateY(-50%); */
+font-family: Open Sans;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+color: #673821;
+text-align: left;
+
+
 
 }
 .amount-txt
@@ -451,7 +490,7 @@
 
 .card-number 
 {
-    
+
 }
 
 .valid-date
@@ -481,6 +520,7 @@
 
     
 }
+
 .visa-icon-text
 {
     display:flex;
@@ -497,5 +537,8 @@ color: #242424;
 
 
 }
+
+
+
 
 
